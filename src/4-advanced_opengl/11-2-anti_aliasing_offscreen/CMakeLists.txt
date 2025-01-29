@@ -1,0 +1,8 @@
+project("11-2-anti_aliasing_offscreen")
+add_executable("11-2-anti_aliasing_offscreen_executable" "main.cpp")
+include_directories("../../includes")
+target_link_libraries("11-2-anti_aliasing_offscreen_executable" PRIVATE "${LIBRARIES}")
+configure_file(11.2.aa_post.fs 11.2.aa_post.fs COPYONLY)
+configure_file(11.2.aa_post.vs 11.2.aa_post.vs COPYONLY)
+configure_file(11.2.anti_aliasing.fs 11.2.anti_aliasing.fs COPYONLY)
+configure_file(11.2.anti_aliasing.vs 11.2.anti_aliasing.vs COPYONLY)

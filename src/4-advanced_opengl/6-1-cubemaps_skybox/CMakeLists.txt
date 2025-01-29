@@ -1,0 +1,8 @@
+project("6-1-cubemaps_skybox")
+add_executable("6-1-cubemaps_skybox_executable" "main.cpp")
+include_directories("../../includes")
+target_link_libraries("6-1-cubemaps_skybox_executable" PRIVATE "${LIBRARIES}")
+configure_file(6.1.cubemaps.fs 6.1.cubemaps.fs COPYONLY)
+configure_file(6.1.cubemaps.vs 6.1.cubemaps.vs COPYONLY)
+configure_file(6.1.skybox.fs 6.1.skybox.fs COPYONLY)
+configure_file(6.1.skybox.vs 6.1.skybox.vs COPYONLY)

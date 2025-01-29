@@ -1,0 +1,6 @@
+project("1-advanced_lighting")
+add_executable("1-advanced_lighting_executable" "main.cpp")
+include_directories("../../includes")
+target_link_libraries("1-advanced_lighting_executable" PRIVATE "${LIBRARIES}")
+configure_file(1.advanced_lighting.fs 1.advanced_lighting.fs COPYONLY)
+configure_file(1.advanced_lighting.vs 1.advanced_lighting.vs COPYONLY)

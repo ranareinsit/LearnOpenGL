@@ -1,0 +1,6 @@
+project("11-1-anti_aliasing_msaa")
+add_executable("11-1-anti_aliasing_msaa_executable" "main.cpp")
+include_directories("../../includes")
+target_link_libraries("11-1-anti_aliasing_msaa_executable" PRIVATE "${LIBRARIES}")
+configure_file(11.1.anti_aliasing.fs 11.1.anti_aliasing.fs COPYONLY)
+configure_file(11.1.anti_aliasing.vs 11.1.anti_aliasing.vs COPYONLY)

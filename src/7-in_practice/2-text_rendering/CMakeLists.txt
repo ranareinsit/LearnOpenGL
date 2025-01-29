@@ -1,0 +1,7 @@
+project("2-text_rendering")
+add_executable("2-text_rendering_executable" "main.cpp")
+include_directories("../../includes")
+target_link_libraries("2-text_rendering_executable" PRIVATE "${LIBRARIES}")
+configure_file(readme.md readme.md COPYONLY)
+configure_file(text.fs text.fs COPYONLY)
+configure_file(text.vs text.vs COPYONLY)

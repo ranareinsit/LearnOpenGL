@@ -1,0 +1,6 @@
+project("2-gamma_correction")
+add_executable("2-gamma_correction_executable" "main.cpp")
+include_directories("../../includes")
+target_link_libraries("2-gamma_correction_executable" PRIVATE "${LIBRARIES}")
+configure_file(2.gamma_correction.fs 2.gamma_correction.fs COPYONLY)
+configure_file(2.gamma_correction.vs 2.gamma_correction.vs COPYONLY)

@@ -1,0 +1,7 @@
+project("9-2-geometry_shader_exploding")
+add_executable("9-2-geometry_shader_exploding_executable" "main.cpp")
+include_directories("../../includes")
+target_link_libraries("9-2-geometry_shader_exploding_executable" PRIVATE "${LIBRARIES}")
+configure_file(9.2.geometry_shader.fs 9.2.geometry_shader.fs COPYONLY)
+configure_file(9.2.geometry_shader.gs 9.2.geometry_shader.gs COPYONLY)
+configure_file(9.2.geometry_shader.vs 9.2.geometry_shader.vs COPYONLY)

@@ -1,0 +1,6 @@
+project("3-2-blending_sort")
+add_executable("3-2-blending_sort_executable" "main.cpp")
+include_directories("../../includes")
+target_link_libraries("3-2-blending_sort_executable" PRIVATE "${LIBRARIES}")
+configure_file(3.2.blending.fs 3.2.blending.fs COPYONLY)
+configure_file(3.2.blending.vs 3.2.blending.vs COPYONLY)

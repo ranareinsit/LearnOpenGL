@@ -1,0 +1,8 @@
+project("5-1-framebuffers")
+add_executable("5-1-framebuffers_executable" "main.cpp")
+include_directories("../../includes")
+target_link_libraries("5-1-framebuffers_executable" PRIVATE "${LIBRARIES}")
+configure_file(5.1.framebuffers.fs 5.1.framebuffers.fs COPYONLY)
+configure_file(5.1.framebuffers.vs 5.1.framebuffers.vs COPYONLY)
+configure_file(5.1.framebuffers_screen.fs 5.1.framebuffers_screen.fs COPYONLY)
+configure_file(5.1.framebuffers_screen.vs 5.1.framebuffers_screen.vs COPYONLY)

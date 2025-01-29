@@ -1,0 +1,6 @@
+project("5-3-parallax_occlusion_mapping")
+add_executable("5-3-parallax_occlusion_mapping_executable" "main.cpp")
+include_directories("../../includes")
+target_link_libraries("5-3-parallax_occlusion_mapping_executable" PRIVATE "${LIBRARIES}")
+configure_file(5.3.parallax_mapping.fs 5.3.parallax_mapping.fs COPYONLY)
+configure_file(5.3.parallax_mapping.vs 5.3.parallax_mapping.vs COPYONLY)

@@ -1,0 +1,8 @@
+project("6-hdr")
+add_executable("6-hdr_executable" "main.cpp")
+include_directories("../../includes")
+target_link_libraries("6-hdr_executable" PRIVATE "${LIBRARIES}")
+configure_file(6.hdr.fs 6.hdr.fs COPYONLY)
+configure_file(6.hdr.vs 6.hdr.vs COPYONLY)
+configure_file(6.lighting.fs 6.lighting.fs COPYONLY)
+configure_file(6.lighting.vs 6.lighting.vs COPYONLY)

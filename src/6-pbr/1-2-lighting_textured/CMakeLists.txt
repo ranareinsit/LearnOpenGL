@@ -1,0 +1,6 @@
+project("1-2-lighting_textured")
+add_executable("1-2-lighting_textured_executable" "main.cpp")
+include_directories("../../includes")
+target_link_libraries("1-2-lighting_textured_executable" PRIVATE "${LIBRARIES}")
+configure_file(1.2.pbr.fs 1.2.pbr.fs COPYONLY)
+configure_file(1.2.pbr.vs 1.2.pbr.vs COPYONLY)

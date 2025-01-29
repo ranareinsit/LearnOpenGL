@@ -1,0 +1,6 @@
+project("3-3-csm")
+add_executable("3-3-csm_executable" "main.cpp")
+include_directories("../../includes")
+target_link_libraries("3-3-csm_executable" PRIVATE "${LIBRARIES}")
+configure_file(csm.fs csm.fs COPYONLY)
+configure_file(csm.vs csm.vs COPYONLY)

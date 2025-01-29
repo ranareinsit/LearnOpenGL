@@ -1,0 +1,6 @@
+project("3-1-blending_discard")
+add_executable("3-1-blending_discard_executable" "main.cpp")
+include_directories("../../includes")
+target_link_libraries("3-1-blending_discard_executable" PRIVATE "${LIBRARIES}")
+configure_file(3.1.blending.fs 3.1.blending.fs COPYONLY)
+configure_file(3.1.blending.vs 3.1.blending.vs COPYONLY)

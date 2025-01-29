@@ -1,0 +1,53 @@
+﻿# https://clang.llvm.org/docs/ClangFormatStyleOptions.html
+---
+Language: Cpp
+BasedOnStyle: LLVM
+ColumnLimit: 160
+Standard: Latest
+TabWidth: 4
+UseTab: Never
+IndentWidth: 4
+AlignConsecutiveAssignments:
+  Enabled: true
+  AcrossEmptyLines: false
+  AcrossComments: true
+
+AlignArrayOfStructures: Right
+
+
+AlignConsecutiveDeclarations:
+  Enabled: true
+  AcrossEmptyLines: false
+  AcrossComments: true
+
+
+AlignConsecutiveMacros:
+  Enabled: true
+  AcrossEmptyLines: true
+  AcrossComments: true
+
+AlignConsecutiveShortCaseStatements:
+  Enabled: true
+  AcrossEmptyLines: true
+  AcrossComments: true
+  AlignCaseColons: true
+
+AlignEscapedNewlines: Left
+
+AlignTrailingComments:
+  Kind: Always
+  OverEmptyLines: 2
+
+AllowShortBlocksOnASingleLine: Never
+
+AllowShortLambdasOnASingleLine: Inline
+
+BreakBeforeTernaryOperators: true
+
+LineEnding: LF
+
+# RemoveEmptyLinesInUnwrappedLines: true
+# RemoveParentheses: MultipleParentheses
+RemoveSemicolon: true
+
+SeparateDefinitionBlocks: Always

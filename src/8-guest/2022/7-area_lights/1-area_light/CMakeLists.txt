@@ -1,0 +1,8 @@
+project("1-area_light")
+add_executable("1-area_light_executable" "main.cpp")
+include_directories("../../../../includes")
+target_link_libraries("1-area_light_executable" PRIVATE "${LIBRARIES}")
+configure_file(7.area_light.fs 7.area_light.fs COPYONLY)
+configure_file(7.area_light.vs 7.area_light.vs COPYONLY)
+configure_file(7.light_plane.fs 7.light_plane.fs COPYONLY)
+configure_file(7.light_plane.vs 7.light_plane.vs COPYONLY)

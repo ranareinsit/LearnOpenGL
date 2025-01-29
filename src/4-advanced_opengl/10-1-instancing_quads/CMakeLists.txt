@@ -1,0 +1,6 @@
+project("10-1-instancing_quads")
+add_executable("10-1-instancing_quads_executable" "main.cpp")
+include_directories("../../includes")
+target_link_libraries("10-1-instancing_quads_executable" PRIVATE "${LIBRARIES}")
+configure_file(10.1.instancing.fs 10.1.instancing.fs COPYONLY)
+configure_file(10.1.instancing.vs 10.1.instancing.vs COPYONLY)

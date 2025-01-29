@@ -1,0 +1,6 @@
+project("skeletal_animation")
+add_executable("skeletal_animation_executable" "main.cpp")
+include_directories("../../../includes")
+target_link_libraries("skeletal_animation_executable" PRIVATE "${LIBRARIES}")
+configure_file(anim_model.fs anim_model.fs COPYONLY)
+configure_file(anim_model.vs anim_model.vs COPYONLY)

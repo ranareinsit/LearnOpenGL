@@ -1,0 +1,8 @@
+project("3-1-1-shadow_mapping_depth")
+add_executable("3-1-1-shadow_mapping_depth_executable" "main.cpp")
+include_directories("../../includes")
+target_link_libraries("3-1-1-shadow_mapping_depth_executable" PRIVATE "${LIBRARIES}")
+configure_file(3.1.1.debug_quad.vs 3.1.1.debug_quad.vs COPYONLY)
+configure_file(3.1.1.debug_quad_depth.fs 3.1.1.debug_quad_depth.fs COPYONLY)
+configure_file(3.1.1.shadow_mapping_depth.fs 3.1.1.shadow_mapping_depth.fs COPYONLY)
+configure_file(3.1.1.shadow_mapping_depth.vs 3.1.1.shadow_mapping_depth.vs COPYONLY)

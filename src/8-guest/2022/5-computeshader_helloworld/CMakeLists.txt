@@ -1,0 +1,7 @@
+project("5-computeshader_helloworld")
+add_executable("5-computeshader_helloworld_executable" "main.cpp")
+include_directories("../../../includes")
+target_link_libraries("5-computeshader_helloworld_executable" PRIVATE "${LIBRARIES}")
+configure_file(computeShader.cs computeShader.cs COPYONLY)
+configure_file(screenQuad.fs screenQuad.fs COPYONLY)
+configure_file(screenQuad.vs screenQuad.vs COPYONLY)

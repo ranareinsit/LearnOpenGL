@@ -1,0 +1,8 @@
+project("2-multiple_area_lights")
+add_executable("2-multiple_area_lights_executable" "main.cpp")
+include_directories("../../../../includes")
+target_link_libraries("2-multiple_area_lights_executable" PRIVATE "${LIBRARIES}")
+configure_file(7.light_plane.fs 7.light_plane.fs COPYONLY)
+configure_file(7.light_plane.vs 7.light_plane.vs COPYONLY)
+configure_file(7.multi_area_light.fs 7.multi_area_light.fs COPYONLY)
+configure_file(7.multi_area_light.vs 7.multi_area_light.vs COPYONLY)

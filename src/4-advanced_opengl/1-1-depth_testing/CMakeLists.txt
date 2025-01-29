@@ -1,0 +1,6 @@
+project("1-1-depth_testing")
+add_executable("1-1-depth_testing_executable" "main.cpp")
+include_directories("../../includes")
+target_link_libraries("1-1-depth_testing_executable" PRIVATE "${LIBRARIES}")
+configure_file(1.1.depth_testing.fs 1.1.depth_testing.fs COPYONLY)
+configure_file(1.1.depth_testing.vs 1.1.depth_testing.vs COPYONLY)

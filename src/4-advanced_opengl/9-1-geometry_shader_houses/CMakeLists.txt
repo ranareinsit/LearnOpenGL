@@ -1,0 +1,7 @@
+project("9-1-geometry_shader_houses")
+add_executable("9-1-geometry_shader_houses_executable" "main.cpp")
+include_directories("../../includes")
+target_link_libraries("9-1-geometry_shader_houses_executable" PRIVATE "${LIBRARIES}")
+configure_file(9.1.geometry_shader.fs 9.1.geometry_shader.fs COPYONLY)
+configure_file(9.1.geometry_shader.gs 9.1.geometry_shader.gs COPYONLY)
+configure_file(9.1.geometry_shader.vs 9.1.geometry_shader.vs COPYONLY)

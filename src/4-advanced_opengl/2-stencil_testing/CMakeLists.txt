@@ -1,0 +1,7 @@
+project("2-stencil_testing")
+add_executable("2-stencil_testing_executable" "main.cpp")
+include_directories("../../includes")
+target_link_libraries("2-stencil_testing_executable" PRIVATE "${LIBRARIES}")
+configure_file(2.stencil_single_color.fs 2.stencil_single_color.fs COPYONLY)
+configure_file(2.stencil_testing.fs 2.stencil_testing.fs COPYONLY)
+configure_file(2.stencil_testing.vs 2.stencil_testing.vs COPYONLY)

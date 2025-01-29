@@ -1,0 +1,6 @@
+project("4-normal_mapping")
+add_executable("4-normal_mapping_executable" "main.cpp")
+include_directories("../../includes")
+target_link_libraries("4-normal_mapping_executable" PRIVATE "${LIBRARIES}")
+configure_file(4.normal_mapping.fs 4.normal_mapping.fs COPYONLY)
+configure_file(4.normal_mapping.vs 4.normal_mapping.vs COPYONLY)

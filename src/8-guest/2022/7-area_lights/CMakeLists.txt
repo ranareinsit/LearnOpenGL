@@ -1,0 +1,6 @@
+project("7-area_lights")
+add_executable("7-area_lights_executable" "main.cpp")
+include_directories("../../includes")
+target_link_libraries("7-area_lights_executable" PRIVATE "${LIBRARIES}")
+configure_file(1.area_light 1.area_light COPYONLY)
+configure_file(2.multiple_area_lights 2.multiple_area_lights COPYONLY)

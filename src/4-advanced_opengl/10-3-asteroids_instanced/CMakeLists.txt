@@ -1,0 +1,8 @@
+project("10-3-asteroids_instanced")
+add_executable("10-3-asteroids_instanced_executable" "main.cpp")
+include_directories("../../includes")
+target_link_libraries("10-3-asteroids_instanced_executable" PRIVATE "${LIBRARIES}")
+configure_file(10.3.asteroids.fs 10.3.asteroids.fs COPYONLY)
+configure_file(10.3.asteroids.vs 10.3.asteroids.vs COPYONLY)
+configure_file(10.3.planet.fs 10.3.planet.fs COPYONLY)
+configure_file(10.3.planet.vs 10.3.planet.vs COPYONLY)

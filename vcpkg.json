@@ -1,0 +1,14 @@
+{
+  "dependencies": [
+    "assimp",
+    "catch2",
+    "glew",
+    "glfw3",
+    "glm",
+    "imgui",
+    "nlohmann-json",
+    "opengl",
+    "sdl3",
+    "freetype"
+  ]
+}

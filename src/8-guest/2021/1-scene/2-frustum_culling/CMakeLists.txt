@@ -1,0 +1,6 @@
+project("2-frustum_culling")
+add_executable("2-frustum_culling_executable" "main.cpp")
+include_directories("../../../../includes")
+target_link_libraries("2-frustum_culling_executable" PRIVATE "${LIBRARIES}")
+configure_file(1.model_loading.fs 1.model_loading.fs COPYONLY)
+configure_file(1.model_loading.vs 1.model_loading.vs COPYONLY)
